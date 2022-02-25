@@ -1,0 +1,10 @@
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bu]uilds/
+[Ll]ogs/
+[Pp]ackages/
+Assets/AssetStoreTools
+
+.vs/
