@@ -68,30 +68,33 @@ public class PrepareScene : MonoBehaviour
         }
         else if(Input.GetKeyDown(KeyCode.E))
         {
-            SceneManager.LoadScene("RyhthmGame");
+            SceneManager.LoadScene("RhythmGameMusic" + MusicSelectController.instance.musicID);
         }
         else if(Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("BedRoom");
+            if (MusicSelectController.instance.isComeFromRoom)
+                SceneManager.LoadScene("BedRoom");
+            else
+                SceneManager.LoadScene("SelectMusic");
         }
     }
 
     public void BGMVolumnChanged()
     {
-        RyhthmGameManger.instance.BGMVolumn = setUp[0].GetComponent<Slider>().value;
-        Debug.Log("BGMVolumn: " + RyhthmGameManger.instance.BGMVolumn);
+        RhythmGameManger.instance.BGMVolumn = setUp[0].GetComponent<Slider>().value;
+        Debug.Log("BGMVolumn: " + RhythmGameManger.instance.BGMVolumn);
     }
 
     public void SpeedChanged()
     {
-        RyhthmGameManger.instance.speed = setUp[1].GetComponent<Slider>().value;
-        Debug.Log("Speed: " + RyhthmGameManger.instance.speed);
+        RhythmGameManger.instance.speed = setUp[1].GetComponent<Slider>().value;
+        Debug.Log("Speed: " + RhythmGameManger.instance.speed);
     }
 
     public void ClickSoundVolumnChanged()
     { 
-        RyhthmGameManger.instance.clickSoundVolumn = setUp[2].GetComponent<Slider>().value;
-        Debug.Log("ClickSoundVoumn: " + RyhthmGameManger.instance.clickSoundVolumn);
+        RhythmGameManger.instance.clickSoundVolumn = setUp[2].GetComponent<Slider>().value;
+        Debug.Log("ClickSoundVoumn: " + RhythmGameManger.instance.clickSoundVolumn);
     }
 }
 

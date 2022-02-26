@@ -8,4 +8,19 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Sence/MainMenu.unity
+    guid: 7d98da3526a71ec4da9e2360c2c881df
+  - enabled: 1
+    path: Assets/Sence/prepare.unity
+    guid: 4f964aa2951cf954e9b56333e1ac5f8f
+  - enabled: 1
+    path: Assets/Sence/RhythmGameMusic1.unity
+    guid: 906c95628b25bd546a0c2fb4476bfced
+  - enabled: 1
+    path: Assets/Sence/SelectMusic.unity
+    guid: 3a4c5d165267d364fb733e55bdcb5859
+  - enabled: 1
+    path: Assets/Sence/TempGameSence.unity
+    guid: 24af22e0e4509864bb8c311328473557
   m_configObjects: {}

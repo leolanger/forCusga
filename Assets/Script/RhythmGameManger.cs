@@ -2,15 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RyhthmGameManger : MonoBehaviour
+public class RhythmGameManger : MonoBehaviour
 {
     // Start is called before the first frame update
-    public static RyhthmGameManger instance;
+    public static RhythmGameManger instance;
 
     public float BGMVolumn;
     public float speed;
     public float clickSoundVolumn;
-
 
     private void Awake()
     {
