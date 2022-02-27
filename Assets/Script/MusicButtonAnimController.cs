@@ -10,13 +10,11 @@ public class MusicButtonAnimController : MonoBehaviour, IPointerEnterHandler, IP
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log("OK");
         ani.SetTrigger("Highlighted");
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        Debug.Log("IT'S");
         ani.SetTrigger("Normal");
     }
 

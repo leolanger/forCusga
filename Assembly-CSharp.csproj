@@ -54,27 +54,31 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\MainMenuButtonScript.cs" />
+    <Compile Include="Assets\Script\MusicButtonAnimController.cs" />
     <Compile Include="Assets\Plugin\Koreographer\Demos\Scripts\DemoControlsUI.cs" />
     <Compile Include="Assets\Koreographer\Demos\Rhythm Game Demo\Scripts\NoteObject.cs" />
     <Compile Include="Assets\Plugin\Koreographer\Demos\Scripts\UIMessageSetter.cs" />
+    <Compile Include="Assets\Script\InstructionScript.cs" />
+    <Compile Include="Assets\Script\ButtonClickedTwiceScript.cs" />
     <Compile Include="Assets\Koreographer\Demos\Rhythm Game Demo\Scripts\DemoPitchDisplayUI.cs" />
+    <Compile Include="Assets\Script\RhythmScene.cs" />
     <Compile Include="Assets\Plugin\Koreographer\Demos\Scripts\TempoSwitch.cs" />
     <Compile Include="Assets\Plugin\Koreographer\Demos\Scripts\ColorAdjuster.cs" />
     <Compile Include="Assets\Koreographer\Demos\Rhythm Game Demo\Scripts\LaneController.cs" />
     <Compile Include="Assets\Plugin\Koreographer\Demos\Scripts\CubeScaler.cs" />
+    <Compile Include="Assets\Script\MusicSelectController.cs" />
     <Compile Include="Assets\Plugin\Koreographer\Demos\Scripts\MusicalImpulse.cs" />
+    <Compile Include="Assets\Script\LoadScript.cs" />
     <Compile Include="Assets\Koreographer\Demos\Rhythm Game Demo\Scripts\DemoDelayDisplayUI.cs" />
+    <Compile Include="Assets\Script\PauseScript.cs" />
     <Compile Include="Assets\Script\PrepareScene.cs" />
     <Compile Include="Assets\Script\RhythmGameManger.cs" />
     <Compile Include="Assets\Plugin\Koreographer\Demos\Scripts\EmitParticlesOnSpan.cs" />
     <Compile Include="Assets\Koreographer\Demos\Rhythm Game Demo\Scripts\RhythmGameController.cs" />
     <Compile Include="Assets\Koreographer\Demos\Rhythm Game Demo\Scripts\ButtonController.cs" />
-    <Compile Include="Assets\Script\InstructionScript.cs" />
-    <Compile Include="Assets\Script\LoadScript.cs" />
-    <Compile Include="Assets\Script\ButtonClickedTwiceScript.cs" />
+    <Compile Include="Assets\test.cs" />
     <Compile Include="Assets\Script\SelectMusic.cs" />
-    <Compile Include="Assets\Script\MusicSelectController.cs" />
-    <Compile Include="Assets\Script\MusicButtonAnimController.cs" />
+    <Compile Include="Assets\Script\RhythmButtonController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Plugin\Plugins\Koreographer\Unity Editor\SonicBloom.Koreo.xml" />

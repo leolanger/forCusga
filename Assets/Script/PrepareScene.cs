@@ -15,6 +15,10 @@ public class PrepareScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        setUp[0].GetComponent<Slider>().value = RhythmGameManger.instance.BGMVolumn;
+        setUp[1].GetComponent<Slider>().value = RhythmGameManger.instance.speed;
+        setUp[2].GetComponent<Slider>().value = RhythmGameManger.instance.clickSoundVolumn;
+
         lastMousPos = Input.mousePosition;
     }
 
@@ -57,12 +61,14 @@ public class PrepareScene : MonoBehaviour
             if(index != -1)
             {
                 setUp[index].GetComponent<Slider>().value++;
+                Debug.Log("1");
             }
         }
         else if(Input.GetKeyDown(KeyCode.S))
         {
             if (index != -1)
             {
+                Debug.Log("2");
                 setUp[index].GetComponent<Slider>().value--;
             }
         }
@@ -81,19 +87,19 @@ public class PrepareScene : MonoBehaviour
 
     public void BGMVolumnChanged()
     {
-        RhythmGameManger.instance.BGMVolumn = setUp[0].GetComponent<Slider>().value;
+        RhythmGameManger.instance.BGMVolumn = (int)setUp[0].GetComponent<Slider>().value;
         Debug.Log("BGMVolumn: " + RhythmGameManger.instance.BGMVolumn);
     }
 
     public void SpeedChanged()
     {
-        RhythmGameManger.instance.speed = setUp[1].GetComponent<Slider>().value;
+        RhythmGameManger.instance.speed = (int)setUp[1].GetComponent<Slider>().value;
         Debug.Log("Speed: " + RhythmGameManger.instance.speed);
     }
 
     public void ClickSoundVolumnChanged()
     { 
-        RhythmGameManger.instance.clickSoundVolumn = setUp[2].GetComponent<Slider>().value;
+        RhythmGameManger.instance.clickSoundVolumn = (int)setUp[2].GetComponent<Slider>().value;
         Debug.Log("ClickSoundVoumn: " + RhythmGameManger.instance.clickSoundVolumn);
     }
 }

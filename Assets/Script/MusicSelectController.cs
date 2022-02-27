@@ -7,7 +7,7 @@ public class MusicSelectController : MonoBehaviour
     public static MusicSelectController instance;
 
     [Range(1,4)]
-    public int musicID;
+    public int musicID = 1;
     public bool isComeFromRoom = true;
 
     // Start is called before the first frame update
