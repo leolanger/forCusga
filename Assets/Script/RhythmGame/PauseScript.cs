@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class PauseScript : MonoBehaviour
 {
+    //音游暂停界面控制脚本
     public Selectable[] options = new Selectable[5];
     public Transform game;
     public Transform pause;

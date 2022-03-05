@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class PrepareScene : MonoBehaviour
 {
+    //音游准备界面控制脚本
     public Slider [] setUp = new Slider[3];
 
     private Vector3 lastMousPos;

@@ -53,32 +53,37 @@
     <UnityVersion>2020.3.24f1c2</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\MainMenuButtonScript.cs" />
-    <Compile Include="Assets\Script\MusicButtonAnimController.cs" />
+    <Compile Include="Assets\Script\UI\MainMenuButtonScript.cs" />
+    <Compile Include="Assets\Script\RhythmGame\MusicButtonAnimController.cs" />
+    <Compile Include="Assets\Script\UI\SettingScript.cs" />
     <Compile Include="Assets\Plugin\Koreographer\Demos\Scripts\DemoControlsUI.cs" />
     <Compile Include="Assets\Koreographer\Demos\Rhythm Game Demo\Scripts\NoteObject.cs" />
     <Compile Include="Assets\Plugin\Koreographer\Demos\Scripts\UIMessageSetter.cs" />
-    <Compile Include="Assets\Script\InstructionScript.cs" />
-    <Compile Include="Assets\Script\ButtonClickedTwiceScript.cs" />
+    <Compile Include="Assets\Script\UI\InstructionScript.cs" />
+    <Compile Include="Assets\Script\BedRoom\BedRoomStateInstance.cs" />
+    <Compile Include="Assets\Script\UI\ButtonClickedTwiceScript.cs" />
     <Compile Include="Assets\Koreographer\Demos\Rhythm Game Demo\Scripts\DemoPitchDisplayUI.cs" />
-    <Compile Include="Assets\Script\RhythmScene.cs" />
+    <Compile Include="Assets\Script\RhythmGame\RhythmScene.cs" />
     <Compile Include="Assets\Plugin\Koreographer\Demos\Scripts\TempoSwitch.cs" />
+    <Compile Include="Assets\Script\RhythmGame\RhythmButtonController.cs" />
     <Compile Include="Assets\Plugin\Koreographer\Demos\Scripts\ColorAdjuster.cs" />
     <Compile Include="Assets\Koreographer\Demos\Rhythm Game Demo\Scripts\LaneController.cs" />
+    <Compile Include="Assets\Script\RoleController.cs" />
     <Compile Include="Assets\Plugin\Koreographer\Demos\Scripts\CubeScaler.cs" />
-    <Compile Include="Assets\Script\MusicSelectController.cs" />
+    <Compile Include="Assets\Script\RhythmGame\MusicSelectController.cs" />
     <Compile Include="Assets\Plugin\Koreographer\Demos\Scripts\MusicalImpulse.cs" />
-    <Compile Include="Assets\Script\LoadScript.cs" />
+    <Compile Include="Assets\Script\UI\LoadScript.cs" />
     <Compile Include="Assets\Koreographer\Demos\Rhythm Game Demo\Scripts\DemoDelayDisplayUI.cs" />
-    <Compile Include="Assets\Script\PauseScript.cs" />
-    <Compile Include="Assets\Script\PrepareScene.cs" />
-    <Compile Include="Assets\Script\RhythmGameManger.cs" />
+    <Compile Include="Assets\Script\RhythmGame\PauseScript.cs" />
+    <Compile Include="Assets\Script\RhythmGame\PrepareScene.cs" />
+    <Compile Include="Assets\Script\RhythmGame\RhythmGameManger.cs" />
     <Compile Include="Assets\Plugin\Koreographer\Demos\Scripts\EmitParticlesOnSpan.cs" />
     <Compile Include="Assets\Koreographer\Demos\Rhythm Game Demo\Scripts\RhythmGameController.cs" />
     <Compile Include="Assets\Koreographer\Demos\Rhythm Game Demo\Scripts\ButtonController.cs" />
     <Compile Include="Assets\test.cs" />
-    <Compile Include="Assets\Script\SelectMusic.cs" />
-    <Compile Include="Assets\Script\RhythmButtonController.cs" />
+    <Compile Include="Assets\Script\RhythmGame\SelectMusic.cs" />
+    <Compile Include="Assets\Script\UI\GamePuseScript.cs" />
+    <Compile Include="Assets\Script\RhythmGame\NoteObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Plugin\Plugins\Koreographer\Unity Editor\SonicBloom.Koreo.xml" />

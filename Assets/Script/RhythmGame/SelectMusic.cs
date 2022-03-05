@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
+//歌曲选择界面控制脚本
 public class SelectMusic : MonoBehaviour
 {
     public Button[] musics = new Button[4];

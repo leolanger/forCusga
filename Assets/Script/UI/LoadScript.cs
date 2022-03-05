@@ -76,13 +76,16 @@ public class LoadScript : MonoBehaviour
 
     public void BackToMainMenu()
     {
-        mainPanel.GetComponent<CanvasGroup>().alpha = 1;
-        mainPanel.GetComponent<CanvasGroup>().interactable = true;
-        mainPanel.GetComponent<CanvasGroup>().blocksRaycasts = true;
-        loadPanel.GetComponent<CanvasGroup>().alpha = 0;
-        loadPanel.GetComponent<CanvasGroup>().interactable = false;
-        loadPanel.GetComponent<CanvasGroup>().blocksRaycasts = false;
-        EventSystem.current.SetSelectedGameObject(null);
+        if (mainPanel.GetComponent<CanvasGroup>() != null && loadPanel.GetComponent<CanvasGroup>() != null)
+        {
+            mainPanel.GetComponent<CanvasGroup>().alpha = 1;
+            mainPanel.GetComponent<CanvasGroup>().interactable = true;
+            mainPanel.GetComponent<CanvasGroup>().blocksRaycasts = true;
+            loadPanel.GetComponent<CanvasGroup>().alpha = 0;
+            loadPanel.GetComponent<CanvasGroup>().interactable = false;
+            loadPanel.GetComponent<CanvasGroup>().blocksRaycasts = false;
+            EventSystem.current.SetSelectedGameObject(null);
+        }
     }
 
 
