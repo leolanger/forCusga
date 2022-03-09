@@ -14,9 +14,9 @@ public class RhythmGameManger : MonoBehaviour
 
     private void Awake()
     {
-        BGMVolumn = 1;
-        speed = 1;
-        clickSoundVolumn = 1;
+        BGMVolumn = 5;
+        speed = 5;
+        clickSoundVolumn = 5;
         instance = this;
     }
 

@@ -56,43 +56,31 @@
     <Compile Include="Assets\Script\UI\MainMenuButtonScript.cs" />
     <Compile Include="Assets\Script\RhythmGame\MusicButtonAnimController.cs" />
     <Compile Include="Assets\Script\UI\SettingScript.cs" />
-    <Compile Include="Assets\Plugin\Koreographer\Demos\Scripts\DemoControlsUI.cs" />
-    <Compile Include="Assets\Koreographer\Demos\Rhythm Game Demo\Scripts\NoteObject.cs" />
-    <Compile Include="Assets\Plugin\Koreographer\Demos\Scripts\UIMessageSetter.cs" />
+    <Compile Include="Assets\Koreographer\Demos\Scripts\DemoControlsUI.cs" />
+    <Compile Include="Assets\Koreographer\Demos\Scripts\UIMessageSetter.cs" />
     <Compile Include="Assets\Script\UI\InstructionScript.cs" />
+    <Compile Include="Assets\Script\RhythmGame\NoteObject.cs" />
     <Compile Include="Assets\Script\BedRoom\BedRoomStateInstance.cs" />
     <Compile Include="Assets\Script\UI\ButtonClickedTwiceScript.cs" />
-    <Compile Include="Assets\Koreographer\Demos\Rhythm Game Demo\Scripts\DemoPitchDisplayUI.cs" />
     <Compile Include="Assets\Script\RhythmGame\RhythmScene.cs" />
-    <Compile Include="Assets\Plugin\Koreographer\Demos\Scripts\TempoSwitch.cs" />
+    <Compile Include="Assets\Koreographer\Demos\Scripts\TempoSwitch.cs" />
     <Compile Include="Assets\Script\RhythmGame\RhythmButtonController.cs" />
-    <Compile Include="Assets\Plugin\Koreographer\Demos\Scripts\ColorAdjuster.cs" />
-    <Compile Include="Assets\Koreographer\Demos\Rhythm Game Demo\Scripts\LaneController.cs" />
+    <Compile Include="Assets\Koreographer\Demos\Scripts\ColorAdjuster.cs" />
     <Compile Include="Assets\Script\RoleController.cs" />
-    <Compile Include="Assets\Plugin\Koreographer\Demos\Scripts\CubeScaler.cs" />
+    <Compile Include="Assets\Koreographer\Demos\Scripts\CubeScaler.cs" />
     <Compile Include="Assets\Script\RhythmGame\MusicSelectController.cs" />
-    <Compile Include="Assets\Plugin\Koreographer\Demos\Scripts\MusicalImpulse.cs" />
+    <Compile Include="Assets\Koreographer\Demos\Scripts\MusicalImpulse.cs" />
     <Compile Include="Assets\Script\UI\LoadScript.cs" />
-    <Compile Include="Assets\Koreographer\Demos\Rhythm Game Demo\Scripts\DemoDelayDisplayUI.cs" />
     <Compile Include="Assets\Script\RhythmGame\PauseScript.cs" />
     <Compile Include="Assets\Script\RhythmGame\PrepareScene.cs" />
     <Compile Include="Assets\Script\RhythmGame\RhythmGameManger.cs" />
-    <Compile Include="Assets\Plugin\Koreographer\Demos\Scripts\EmitParticlesOnSpan.cs" />
-    <Compile Include="Assets\Koreographer\Demos\Rhythm Game Demo\Scripts\RhythmGameController.cs" />
-    <Compile Include="Assets\Koreographer\Demos\Rhythm Game Demo\Scripts\ButtonController.cs" />
+    <Compile Include="Assets\Koreographer\Demos\Scripts\EmitParticlesOnSpan.cs" />
     <Compile Include="Assets\test.cs" />
     <Compile Include="Assets\Script\RhythmGame\SelectMusic.cs" />
     <Compile Include="Assets\Script\UI\GamePuseScript.cs" />
-    <Compile Include="Assets\Script\RhythmGame\NoteObject.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Plugin\Plugins\Koreographer\Unity Editor\SonicBloom.Koreo.xml" />
-    <None Include="Assets\Plugin\Plugins\Koreographer\SonicBloom.MIDI.dll" />
-    <None Include="Assets\Plugin\Koreographer\ReadMe.txt" />
-    <None Include="Assets\Plugin\Plugins\Koreographer\SonicBloom.Koreo.xml" />
-    <None Include="Assets\Plugin\Plugins\Koreographer\SonicBloom.MIDI.xml" />
-    <None Include="Assets\Plugin\Plugins\Koreographer\SonicBloom.Koreo.dll" />
-    <None Include="Assets\Plugin\Plugins\Koreographer\Unity Editor\SonicBloom.Koreo.dll" />
+    <None Include="Assets\Koreographer\ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -323,14 +311,14 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>D:\UNITY\2020.3.24f1c2\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="SonicBloom.MIDI">
-      <HintPath>Assets\Plugin\Plugins\Koreographer\SonicBloom.MIDI.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="SonicBloom.MIDI">
+      <HintPath>Assets\Plugins\Koreographer\SonicBloom.MIDI.dll</HintPath>
+    </Reference>
     <Reference Include="SonicBloom.Koreo">
-      <HintPath>Assets\Plugin\Plugins\Koreographer\Unity Editor\SonicBloom.Koreo.dll</HintPath>
+      <HintPath>Assets\Plugins\Koreographer\Unity Editor\SonicBloom.Koreo.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>D:\UNITY\2020.3.24f1c2\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>

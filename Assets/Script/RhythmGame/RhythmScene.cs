@@ -11,6 +11,10 @@ public class RhythmScene : MonoBehaviour
     public Transform pausePanel;
     public Transform resultPanel;
     public Transform game;
+
+    Stack<NoteObject> noteObjectPool = new Stack<NoteObject>();
+    //音符
+    public NoteObject noteObject;
     [Tooltip("用于目标生成的轨道")]
     [EventID]
     public string eventID;
@@ -22,7 +26,8 @@ public class RhythmScene : MonoBehaviour
     [Range(8f,300f)]
     public float hitWindowRangeInMS;
     //音符速度
-    public float noteSpeed = 1;
+    private float noteSpeed;
+    public float getNoteSpeed { get { return noteSpeed; } }
     //当前以长度为单位的命中窗口的大小
     public float WindowSizeInUnits { get { return noteSpeed * (hitWindowRangeInMS * 0.001f); } }
     //以音乐样本为单位的命中窗口大小
@@ -52,6 +57,8 @@ public class RhythmScene : MonoBehaviour
     {
         InitializeLeadIn();
 
+        noteSpeed = RhythmGameManger.instance.speed;
+
         //获取Koreography对象
         playingKoreo = Koreographer.Instance.GetKoreographyAtIndex(0);
         //获取事件轨迹
@@ -76,7 +83,9 @@ public class RhythmScene : MonoBehaviour
                         noteID = noteID - 6;
                     }
                 }
-                if(lane.DoesMatch(noteID))
+                Debug.Log("noteId:" +noteID);
+                Debug.Log("buttonId:" + lane.buttonID);
+                if (lane.DoesMatch(noteID))
                 {
                     lane.AddEventToLane(evt);
                     break;
@@ -101,7 +110,7 @@ public class RhythmScene : MonoBehaviour
         }
 
         //倒数引导时间
-        if(leadInTimeLeft >0)
+        if(leadInTimeLeft > 0)
         {
             leadInTimeLeft = Mathf.Max(leadInTimeLeft - Time.unscaledDeltaTime, 0); 
         }
@@ -131,6 +140,37 @@ public class RhythmScene : MonoBehaviour
         else
         {
             audioCom.Play();
+        }
+    }
+
+    //从对象池取对象
+    public NoteObject GetFreshNoteObject()
+    {
+        NoteObject retObj;
+        if(noteObjectPool.Count >0)
+        {
+            retObj = noteObjectPool.Pop();
+        }
+        else
+        {
+            //资源源
+            //retObj = Instantiate<NoteObject>(noteObject);
+            retObj = Instantiate(noteObject);
+        }
+
+        retObj.gameObject.SetActive(true);
+        retObj.enabled = true;
+
+        return retObj;
+    }
+
+    public void ReturnNoteObjectToPool(NoteObject obj)
+    {
+        if(obj != null)
+        {
+            obj.enabled = false;
+            obj.gameObject.SetActive(false);
+            noteObjectPool.Push(obj);
         }
     }
 }
